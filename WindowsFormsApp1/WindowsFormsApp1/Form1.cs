@@ -23,5 +23,21 @@ namespace WindowsFormsApp1
             label1.Text = result.ToString();
 
         }
+
+        private void Squaring_Click(object sender, EventArgs e)
+        {
+            string firstValueText = TextBox1.Text;
+            double firstValue = Convert.ToDouble(firstValueText);
+            string operation = ((Button)sender).Name;
+            IOneArgumentCalculate calculator = OneArgumentFactory.CreateCalculator(operation);
+            double result = calculator.Calculate(firstValue);
+
+            label1.Text = result.ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

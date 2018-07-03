@@ -35,6 +35,8 @@
             this.Divide = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Squaring = new System.Windows.Forms.Button();
+            this.Sqrt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Add
@@ -49,7 +51,7 @@
             // 
             // TextBox1
             // 
-            this.TextBox1.Location = new System.Drawing.Point(183, 38);
+            this.TextBox1.Location = new System.Drawing.Point(161, 35);
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.Size = new System.Drawing.Size(115, 20);
             this.TextBox1.TabIndex = 1;
@@ -85,7 +87,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(318, 38);
+            this.textBox2.Location = new System.Drawing.Point(302, 35);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(116, 20);
             this.textBox2.TabIndex = 6;
@@ -98,11 +100,33 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 7;
             // 
+            // Squaring
+            // 
+            this.Squaring.Location = new System.Drawing.Point(151, 64);
+            this.Squaring.Name = "Squaring";
+            this.Squaring.Size = new System.Drawing.Size(75, 23);
+            this.Squaring.TabIndex = 8;
+            this.Squaring.Text = "x^2";
+            this.Squaring.UseVisualStyleBackColor = true;
+            this.Squaring.Click += new System.EventHandler(this.Squaring_Click);
+            // 
+            // Sqrt
+            // 
+            this.Sqrt.Location = new System.Drawing.Point(151, 93);
+            this.Sqrt.Name = "Sqrt";
+            this.Sqrt.Size = new System.Drawing.Size(75, 23);
+            this.Sqrt.TabIndex = 9;
+            this.Sqrt.Text = "sqrt";
+            this.Sqrt.UseVisualStyleBackColor = true;
+            this.Sqrt.Click += new System.EventHandler(this.Squaring_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 194);
+            this.Controls.Add(this.Sqrt);
+            this.Controls.Add(this.Squaring);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Divide);
@@ -112,6 +136,7 @@
             this.Controls.Add(this.Add);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +151,8 @@
         private System.Windows.Forms.Button Divide;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Squaring;
+        private System.Windows.Forms.Button Sqrt;
     }
 }
 

@@ -15,7 +15,9 @@ namespace WindowsFormsApp1
                 case "Divide":
                     return new Divide();
                 case "Multiply":
-                    return new Multiply();
+                    return new Multiplay();
+               
+
                 default:
                     throw new Exception("Неизвестная операция");
 
