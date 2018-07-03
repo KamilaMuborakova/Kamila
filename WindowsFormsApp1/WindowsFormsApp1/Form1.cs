@@ -16,29 +16,9 @@ namespace WindowsFormsApp1
             double firstValue = Convert.ToDouble(firstValueText);
             string secondValueText = textBox2.Text;
             double secondValue = Convert.ToDouble(secondValueText);
-            double result;
-            switch (((Button)sender).Name)
-            {
-      
-                case "Add":
-                    result = firstValue + secondValue;
-                    break;
-        
-                case "Substract":
-                    result = firstValue - secondValue;
-                    break;
 
-                case "Multiply":
-                    result = firstValue * secondValue;
-                    break;
-
-                case "Divide":
-                    result = firstValue / secondValue;
-                    break;
-                    
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+                 ITwoArgumentsCalculate calculator = TwoArgumentFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(firstValue, secondValue);
 
             label1.Text = result.ToString();
 
