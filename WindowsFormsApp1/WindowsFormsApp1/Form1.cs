@@ -16,5 +16,49 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-    }
+
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string firstValueText = TextBox1.Text;
+            double firstValue = Convert.ToDouble(firstValueText);
+            string secondValueText = textBox2.Text;
+            double secondValue = Convert.ToDouble(secondValueText);
+            double result = firstValue + secondValue;
+            label1.Text = result.ToString();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string firstValueText = TextBox1.Text;
+            double firstValue = Convert.ToDouble(firstValueText);
+            string secondValueText = textBox2.Text;
+            double secondValue = Convert.ToDouble(secondValueText);
+            double result = firstValue - secondValue;
+            label1.Text = result.ToString();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string firstValueText = TextBox1.Text;
+            double firstValue = Convert.ToDouble(firstValueText);
+            string secondValueText = textBox2.Text;
+            double secondValue = Convert.ToDouble(secondValueText);
+            double result = firstValue * secondValue;
+            label1.Text = result.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string firstValueText = TextBox1.Text;
+            double firstValue = Convert.ToDouble(firstValueText);
+            string secondValueText = textBox2.Text;
+            double secondValue = Convert.ToDouble(secondValueText);
+            double result = firstValue / secondValue;
+            label1.Text = result.ToString();
+        }
+    } 
 }
