@@ -16,12 +16,12 @@ namespace WindowsFormsApp1
             double firstValue = Convert.ToDouble(firstValueText);
             string secondValueText = textBox2.Text;
             double secondValue = Convert.ToDouble(secondValueText);
-
-                 ITwoArgumentsCalculate calculator = TwoArgumentFactory.CreateCalculator(((Button)sender).Name);
+            string operation = ((Button)sender).Name;
+            ITwoArgumentsCalculate calculator = TwoArgumentFactory.CreateCalculator(operation);
             double result = calculator.Calculate(firstValue, secondValue);
 
             label1.Text = result.ToString();
 
         }
-    } 
+    }
 }
