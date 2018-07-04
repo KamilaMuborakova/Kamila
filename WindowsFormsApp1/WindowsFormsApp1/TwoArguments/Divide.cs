@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1
+﻿using WindowsFormsApp1.TwoArguments;
+
+namespace WindowsFormsApp1
 {
     public class Divide : ITwoArgumentsCalculate
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.TwoArguments
 {
-    public class TwoArgumentFactory
+    public static class TwoArgumentFactory
     {
         public static ITwoArgumentsCalculate CreateCalculator(string calculatorName)
         {
