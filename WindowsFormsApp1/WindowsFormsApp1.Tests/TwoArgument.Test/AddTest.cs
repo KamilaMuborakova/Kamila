@@ -7,16 +7,17 @@ namespace WindowsFormsApp1.Tests.TwoArgument.Test
     {
         [TestFixture]
         public class TestClass
-        {
-            [Test]
-            public void TestMetod()
+        { 
+            [TestCase(0, 0, 0)]
+            [TestCase(3, 4, 7)]
+            [TestCase(-7, -2, -9)]
+            public void CalculateTest(double firstValue, double secondValue, double expected)
             {
-                ITwoArgumentsCalculate calculator = new AddCalculator();
-                double result = calculator.Calculate(1, 1);
-
-                Assert.AreEqual(2,result);
+                var calculator = new AddCalculator();
+                var actualResult = calculator.Calculate(firstValue, secondValue);
+                Assert.AreEqual(expected, actualResult);
             }
-        
+
         }
 
     }

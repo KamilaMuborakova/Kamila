@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1.TwoArguments
+﻿using System;
+
+namespace WindowsFormsApp1.TwoArguments
 {
     public class Substract : ITwoArgumentsCalculate
     {
@@ -7,5 +9,6 @@
             return firstArgument - secondArgument;
         }
 
+        public object Calculate(double firstValue) => throw new NotImplementedException();
     }
 }

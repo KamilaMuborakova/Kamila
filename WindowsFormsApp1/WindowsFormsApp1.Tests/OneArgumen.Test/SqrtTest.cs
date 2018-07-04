@@ -13,16 +13,18 @@ namespace WindowsFormsApp1.Tests.OneArgumen.Test
         [TestFixture]
         public class TestClass
         {
-
-            [Test]
-            public void TestMetod()
+            [TestCase(0, 0, 0)]
+            [TestCase(3, 4, 7)]
+            [TestCase(-7, -2, -9)]
+            public void CalculateTest(double firstValue, double expected)
             {
-                IOneArgumentCalculate calculator = new Sqrt();
-                double result = calculator.Calculate(4);
-
-                Assert.AreEqual(2, result);
+                var calculator = new Sqrt();
+                var actualResult = calculator.Calculate(firstValue);
+                Assert.AreEqual(expected, actualResult);
             }
-        }
-    }
 
+
+        }
+
+    }
 }

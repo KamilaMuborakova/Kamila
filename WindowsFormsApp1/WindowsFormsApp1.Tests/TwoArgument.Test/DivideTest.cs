@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WindowsFormsApp1.TwoArguments;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace WindowsFormsApp1.Tests.TwoArgument.Test
 
@@ -14,15 +8,15 @@ namespace WindowsFormsApp1.Tests.TwoArgument.Test
         [TestFixture]
         public class TestClass
     {
-       
-            [Test]
-            public void TestMetod()
-            {
-                ITwoArgumentsCalculate calculator = new Divide();
-                double result = calculator.Calculate(2, 2);
-
-                Assert.AreEqual(1, result);
-            }
+        [TestCase(0, 0, 0)]
+        [TestCase(3, 4, 7)]
+        [TestCase(-7, -2, -9)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
+        {
+            var calculator = new Divide();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
+        }
         }
     }
    

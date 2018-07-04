@@ -13,14 +13,14 @@ namespace WindowsFormsApp1.Tests.TwoArgument.Test
         [TestFixture]
         public class TestClass
         {
-
-            [Test]
-            public void TestMetod()
+            [TestCase(0, 0, 0)]
+            [TestCase(3, 4, 7)]
+            [TestCase(-7, -2, -9)]
+            public void CalculateTest(double firstValue, double secondValue, double expected)
             {
-                ITwoArgumentsCalculate calculator = new Multiplay();
-                double result = calculator.Calculate(2, 2);
-
-                Assert.AreEqual(4, result);
+                var calculator = new Multiplay();
+                var actualResult = calculator.Calculate(firstValue, secondValue);
+                Assert.AreEqual(expected, actualResult);
             }
         }
     }
