@@ -41,7 +41,7 @@
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(359, 64);
+            this.Add.Location = new System.Drawing.Point(230, 51);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(75, 23);
             this.Add.TabIndex = 0;
@@ -51,14 +51,14 @@
             // 
             // TextBox1
             // 
-            this.TextBox1.Location = new System.Drawing.Point(161, 35);
+            this.TextBox1.Location = new System.Drawing.Point(68, 25);
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.Size = new System.Drawing.Size(115, 20);
             this.TextBox1.TabIndex = 1;
             // 
             // Substract
             // 
-            this.Substract.Location = new System.Drawing.Point(242, 64);
+            this.Substract.Location = new System.Drawing.Point(149, 51);
             this.Substract.Name = "Substract";
             this.Substract.Size = new System.Drawing.Size(75, 23);
             this.Substract.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // Multiply
             // 
-            this.Multiply.Location = new System.Drawing.Point(359, 93);
+            this.Multiply.Location = new System.Drawing.Point(230, 80);
             this.Multiply.Name = "Multiply";
             this.Multiply.Size = new System.Drawing.Size(75, 23);
             this.Multiply.TabIndex = 4;
@@ -78,7 +78,7 @@
             // 
             // Divide
             // 
-            this.Divide.Location = new System.Drawing.Point(242, 93);
+            this.Divide.Location = new System.Drawing.Point(149, 80);
             this.Divide.Name = "Divide";
             this.Divide.Size = new System.Drawing.Size(75, 23);
             this.Divide.TabIndex = 5;
@@ -87,7 +87,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(302, 35);
+            this.textBox2.Location = new System.Drawing.Point(189, 25);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(116, 20);
             this.textBox2.TabIndex = 6;
@@ -102,7 +102,7 @@
             // 
             // Squaring
             // 
-            this.Squaring.Location = new System.Drawing.Point(151, 64);
+            this.Squaring.Location = new System.Drawing.Point(68, 51);
             this.Squaring.Name = "Squaring";
             this.Squaring.Size = new System.Drawing.Size(75, 23);
             this.Squaring.TabIndex = 8;
@@ -112,7 +112,7 @@
             // 
             // Sqrt
             // 
-            this.Sqrt.Location = new System.Drawing.Point(151, 93);
+            this.Sqrt.Location = new System.Drawing.Point(68, 80);
             this.Sqrt.Name = "Sqrt";
             this.Sqrt.Size = new System.Drawing.Size(75, 23);
             this.Sqrt.TabIndex = 9;
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 194);
+            this.ClientSize = new System.Drawing.Size(414, 154);
             this.Controls.Add(this.Sqrt);
             this.Controls.Add(this.Squaring);
             this.Controls.Add(this.label1);
