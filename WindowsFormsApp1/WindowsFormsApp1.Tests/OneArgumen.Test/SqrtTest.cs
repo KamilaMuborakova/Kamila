@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WindowsFormsApp1.TwoArguments;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace WindowsFormsApp1.Tests.OneArgumen.Test
 {
@@ -13,9 +7,9 @@ namespace WindowsFormsApp1.Tests.OneArgumen.Test
         [TestFixture]
         public class TestClass
         {
-            [TestCase(0, 0, 0)]
-            [TestCase(3, 4, 7)]
-            [TestCase(-7, -2, -9)]
+            [TestCase(4, 2)]
+            [TestCase(0, 0)]
+            [TestCase(16, 4)]
             public void CalculateTest(double firstValue, double expected)
             {
                 var calculator = new Sqrt();

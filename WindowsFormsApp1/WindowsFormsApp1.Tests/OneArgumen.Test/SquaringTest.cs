@@ -8,9 +8,9 @@ namespace WindowsFormsApp1.Tests.OneArgumen.Test
         [TestFixture]
         public class TestClass
         { 
-            [TestCase(0, 0, 0)]
-            [TestCase(3, 4, 7)]
-            [TestCase(-7, -2, -9)]
+            [TestCase(2, 4)]
+            [TestCase(0,0)]
+            [TestCase(-3,9)]
             public void CalculateTest(double firstValue, double secondValue, double expected)
             {
                 var calculator = new AddCalculator();

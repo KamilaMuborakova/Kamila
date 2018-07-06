@@ -14,8 +14,8 @@ namespace WindowsFormsApp1.Tests.TwoArgument.Test
         public class TestClass
         {
             [TestCase(0, 0, 0)]
-            [TestCase(3, 4, 7)]
-            [TestCase(-7, -2, -9)]
+            [TestCase(3, 4, -1)]
+            [TestCase(7, 2, 5)]
             public void CalculateTest(double firstValue, double secondValue, double expected)
             {
                 var calculator = new Substract();

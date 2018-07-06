@@ -8,9 +8,9 @@ namespace WindowsFormsApp1.Tests.TwoArgument.Test
         [TestFixture]
         public class TestClass
     {
-        [TestCase(0, 0, 0)]
-        [TestCase(3, 4, 7)]
-        [TestCase(-7, -2, -9)]
+        [TestCase(12, 3, 4)]
+        [TestCase(8, 4, 2)]
+        [TestCase(10, 2, 5)]
         public void CalculateTest(double firstValue, double secondValue, double expected)
         {
             var calculator = new Divide();
