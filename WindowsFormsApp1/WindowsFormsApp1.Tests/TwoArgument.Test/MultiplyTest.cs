@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WindowsFormsApp1.TwoArguments;
+﻿using WindowsFormsApp1.TwoArguments;
 using NUnit.Framework;
 
 namespace WindowsFormsApp1.Tests.TwoArgument.Test

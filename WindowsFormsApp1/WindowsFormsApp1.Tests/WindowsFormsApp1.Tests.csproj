@@ -47,8 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumen.Test\OneArgumentFactoryTest.cs" />
     <Compile Include="OneArgumen.Test\SqrtTest.cs" />
     <Compile Include="OneArgumen.Test\SquaringTest.cs" />
+    <Compile Include="TwoArgument.Test\TwoArgumentsFactoryTest.cs" />
     <Compile Include="TwoArgument.Test\AddTest.cs" />
     <Compile Include="TwoArgument.Test\DivideTest.cs" />
     <Compile Include="TwoArgument.Test\MultiplyTest.cs" />
